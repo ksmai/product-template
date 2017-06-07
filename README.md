@@ -19,5 +19,8 @@ yarn test      # run tests
 yarn run lint  # lint typescript source codes
 ```
 
+## Acknowledgement
+All images and videos are downloaded from https://www.pexels.com/
+
 ## License
 MIT
