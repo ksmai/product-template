@@ -1,1 +1,29 @@
-intro
+<section class="intro" *ngIf="introData | async as data">
+  <section class="intro__text">
+    <h2 class="intro__title">{{data.title}}</h2>
+    <p class="intro__content">{{data.content}}</p>
+  </section>
+
+  <section class="intro__images">
+    <img
+      [src]="data.topImage"
+      [alt]="data.topAlt"
+      class="intro__image intro__image--top"
+      [adsScrollImage]="[10,-10]"
+    >
+
+    <img
+      [src]="data.middleImage"
+      [alt]="data.middleAlt"
+      class="intro__image intro__image--middle"
+      [adsScrollImage]="[-20,20]"
+    >
+
+    <img
+      [src]="data.bottomImage"
+      [alt]="data.bottomAlt"
+      class="intro__image intro__image--bottom"
+      [adsScrollImage]="[10,-10]"
+    >
+  </section>
+</section>

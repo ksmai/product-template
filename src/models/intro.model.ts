@@ -4,4 +4,7 @@ export class IntroData {
   topImage: string;
   middleImage: string;
   bottomImage: string;
+  topAlt: string;
+  middleAlt: string;
+  bottomAlt: string;
 }

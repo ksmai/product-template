@@ -1,0 +1,54 @@
+.intro {
+  height: 600px;
+  padding: 20px 40px 40px 100px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.intro__text {
+  display: inline-block;
+  width: 45%;
+}
+
+.intro__title {
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: .2em;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.intro__content {
+  line-height: 2;
+}
+
+.intro__images {
+  display: inline-block;
+  width: 45%;
+  height: 100%;
+  position: relative;
+}
+
+.intro__image {
+  position: absolute;
+}
+
+.intro__image--top {
+  height: 200px;
+  right: 0;
+  top: 10%;
+}
+
+.intro__image--middle {
+  height: 250px;
+  top: 30%;
+  right: 10%;
+}
+
+.intro__image--bottom {
+  height: 250px;
+  left: 0;
+  bottom: 10%;
+}
