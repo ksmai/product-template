@@ -3,45 +3,38 @@ import { SidenavData } from '../models';
 export const sidenavData: SidenavData = {
   links: [
     {
-      url: '/',
-      text: 'P1xt&apos;s guide',
-      internal: true,
-      important: false,
+      url: '#',
+      text: "P1xt's guide",
+      important: true,
     },
     {
       url: 'https://github.com/P1xt/p1xt-guides/blob/master/job-ready.md',
-      text: 'Job ready guide',
-      internal: false,
+      text: 'Job ready',
       important: false,
     },
     {
       url: 'https://github.com/P1xt/p1xt-guides/blob/master/cs-wd.md',
-      text: 'Computer science guide',
-      internal: false,
+      text: 'Computer science',
       important: false,
     },
     {
       url: 'https://github.com/P1xt/p1xt-guides/blob/master/wd-cs.md',
-      text: 'Web development guide',
-      internal: false,
+      text: 'Web development',
       important: false,
     },
     {
       url: 'https://github.com/P1xt/p1xt-guides/blob/master/game-programming.md',
-      text: 'Video game programming guide',
-      internal: false,
+      text: 'Video game programming',
       important: false,
     },
     {
       url: 'https://github.com/P1xt/p1xt-guides/blob/master/android-native.md',
-      text: 'Native Android programming guide',
-      internal: false,
+      text: 'Native Android',
       important: false,
     },
     {
       url: 'https://github.com/P1xt/p1xt-guides',
       text: 'Start now',
-      internal: false,
       important: true,
     },
   ],

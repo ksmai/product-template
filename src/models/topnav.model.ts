@@ -2,7 +2,6 @@
 class NavItem {
   text: string;
   url: string;
-  internal: boolean;
   important: boolean;
 }
 

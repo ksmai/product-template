@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 140px 20px 40px;
+}
+
+.logo {
+  height: 40px;
+  line-height: 40px;
+}
+
+.logo__image {
+  height: 100%;
+}
+
+.logo__text {
+  vertical-align: top;
+  font-size: .9em;
+  padding-left: 20px;
+}

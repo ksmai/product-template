@@ -3,7 +3,6 @@ class GalleryImage {
   url: string;
   title: string;
   link: string;
-  internal: boolean;
 }
 
 export class GalleryData {

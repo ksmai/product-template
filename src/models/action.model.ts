@@ -3,7 +3,6 @@
 class Action {
   text: string;
   url: string;
-  internal: boolean;
 }
 
 export class ActionData {

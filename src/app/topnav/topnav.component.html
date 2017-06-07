@@ -1,1 +1,16 @@
-topnav
+<nav *ngIf="topnavData | async as data" class="nav">
+  <a href="#" class="logo link">
+    <img [src]="data.logo" [alt]="data.name" class="logo__image">
+    <span class="logo__text">{{data.name}}</span>
+  </a>
+
+  <ul>
+    <a
+      *ngFor="let link of data.links"
+      [href]="link.url"
+      target="_blank"
+      class="link"
+      [class.link--important]="link.important"
+    >{{link.text}}</a>
+  </ul>
+</nav>

@@ -1,0 +1,51 @@
+.menu-button {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .7);
+  cursor: pointer;
+  font-size: 20px;
+  opacity: .7;
+  transition: opacity .15s cubic-bezier(.4, 0, .2, 1);
+  z-index: 2;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 0;
+}
+
+.menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+  background-color: #fff;
+  transform: translateX(0);
+  transition: transform .175s cubic-bezier(.4, 0, .6, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+.menu--closed {
+  transform: translateX(100%);
+}

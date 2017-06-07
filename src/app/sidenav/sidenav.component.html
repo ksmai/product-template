@@ -1,1 +1,19 @@
-sidenav
+<button (click)="toggleOpen()" class="menu-button">
+  <i class="fa fa-times" *ngIf="opened; else closed"></i>
+
+  <ng-template #closed>
+    <i class="fa fa-bars"></i>
+  </ng-template>
+</button>
+
+<div class="overlay" *ngIf="opened" (click)="toggleOpen()"></div>
+
+<nav class="menu" [class.menu--closed]="!opened">
+  <a
+    *ngFor="let link of (sidenavData|async).links"
+    [href]="link.url"
+    target="_blank"
+    class="link"
+    [class.link--important]="link.important"
+  >{{link.text}}</a>
+</nav>

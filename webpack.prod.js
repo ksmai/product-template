@@ -75,7 +75,7 @@ module.exports = {
         use: '@ngtools/webpack',
       },
       {
-        test: /\.(?:jpe?g|png|svg|gif)$/,
+        test: /\.(?:jpe?g|png|gif)$/,
         use: [
           {
             loader: 'url-loader',
@@ -101,13 +101,17 @@ module.exports = {
         ],
       },
       {
-        test: /\.mp4$/,
+        test: /\.(?:mp4)$/,
         use: {
           loader: 'url-loader',
           options: {
             limit: 10000,
           },
         },
+      },
+      {
+        test: /\.(?:ttf|woff2?|eot|svg)$/,
+        use: 'file-loader',
       },
     ],
   },

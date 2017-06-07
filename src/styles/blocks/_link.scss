@@ -1,0 +1,17 @@
+.link {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  opacity: .7;
+  transition: opacity .15s cubic-bezier(.4, 0, .2, 1);
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.link--important {
+  color: #e24d3f;
+}
