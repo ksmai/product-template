@@ -1,1 +1,14 @@
-video
+<section class="video" *ngIf="videoData | async as data">
+  <video
+    [src]="data.url"
+    autoplay
+    loop
+    [volume]="0"
+    class="video__player"
+  ></video>
+
+  <section class="video__text">
+    <h2 class="video__title">{{data.title}}</h2>
+    <h3 class="video__subtitle">{{data.subtitle}}</h3>
+  </section>
+</section>

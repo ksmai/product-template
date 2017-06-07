@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 
-import { DataService } from '../core/data.service';
 import { TopnavData } from '../../models';
+import { DataService } from '../core/data.service';
 
 @Component({
   selector: 'ads-topnav',

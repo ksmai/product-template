@@ -1,27 +1,27 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
+import { Observable } from 'rxjs/Observable';
 
 import {
-  videoData,
-  introData,
-  detailData,
-  galleryData,
-  featureData,
   actionData,
-  topnavData,
+  detailData,
+  featureData,
+  galleryData,
+  introData,
   sidenavData,
+  topnavData,
+  videoData,
 } from '../../data';
 
 import {
-  VideoData,
-  IntroData,
-  DetailData,
-  GalleryData,
-  FeatureData,
   ActionData,
-  TopnavData,
+  DetailData,
+  FeatureData,
+  GalleryData,
+  IntroData,
   SidenavData,
+  TopnavData,
+  VideoData,
 } from '../../models';
 
 @Injectable()
