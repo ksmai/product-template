@@ -30,7 +30,7 @@ module.exports = {
         use: 'null-loader',
       },
       {
-        test: /\.(?:jpe?g|png|svg|gif)$/,
+        test: /\.(?:jpe?g|png|svg|gif|mp4)$/,
         use: 'null-loader',
       },
     ],

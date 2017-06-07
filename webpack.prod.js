@@ -100,6 +100,15 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.mp4$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 10000,
+          },
+        },
+      },
     ],
   },
 
