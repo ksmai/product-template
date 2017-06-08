@@ -73,3 +73,32 @@
     rgba(0, 0, 0, .6)
   );
 }
+
+@media (max-width: 768px) {
+  .gallery {
+    height: 480vw;
+  }
+
+  .gallery__wrapper {
+    width: 100vw;
+    height: 80vw;
+
+    &:nth-child(1) {
+      top: 0;
+      right: 0;
+      left: auto;
+    }
+    &:nth-child(2) {
+      top: 160vw;
+      right: 0;
+      left: auto;
+    }
+    &:nth-child(3) {
+      top: 240vw;
+    }
+  }
+
+  .gallery__wrapper--long {
+    height: 160vw;
+  }
+}
