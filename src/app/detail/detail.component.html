@@ -1,1 +1,18 @@
-detail
+<section class="detail" *ngIf="detailData | async as data">
+  <section class="video">
+    <section class="video__player-container">
+      <video [src]="data.video" controls class="video__player"></video>
+    </section>
+
+    <section class="video__text">
+      <h2 class="video__title">{{data.title}}</h2>
+      <h3 class="video__subtitle">{{data.subtitle}}</h3>
+    </section>
+  </section>
+
+  <article class="description">
+    <p class="description__lead">{{data.lead}}</p>
+    <p class="description__content">{{data.content}}</p>
+  </article>
+</section>
+    

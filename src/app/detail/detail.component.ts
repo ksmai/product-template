@@ -1,9 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+
+import { DetailData } from '../../models';
+import { DataService } from '../core/data.service';
 
 @Component({
   selector: 'ads-detail',
   templateUrl: './detail.component.html',
   styleUrls: ['./detail.component.scss'],
 })
-export class DetailComponent {
+export class DetailComponent implements OnInit {
+  detailData: Observable<DetailData>;
+
+  constructor(private dataService: DataService) {
+  }
+
+  ngOnInit(): void {
+    this.detailData = this.dataService.getDetailData();
+  }
 }
