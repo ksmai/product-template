@@ -1,5 +1,5 @@
 .feature {
-  padding: 30px 100px;
+  padding: 100px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -88,8 +88,7 @@
 @media (max-width: 768px) {
   .feature {
     flex-wrap: wrap;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 50px 30px;
   }
 
   .feature__demo,
@@ -116,7 +115,7 @@
     padding-left: 0;
   }
 
-  .feature__subtitle--material {
+  .feature__subtitle--variation {
     display: none;
   }
 }

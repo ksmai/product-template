@@ -4,5 +4,6 @@ export class FeatureData {
   link: string;
   text: string;
   buttonText: string;
-  materials: string[];
+  variationType: string;
+  variations: string[];
 }

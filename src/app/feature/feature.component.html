@@ -1,7 +1,7 @@
 <section class="feature" *ngIf="featureData | async as data">
   <figure class="feature__demo">
     <img
-      [src]="demoImage || data.materials[0]"
+      [src]="demoImage || data.variations[0]"
       alt="feature demo"
       class="feature__image"
     >
@@ -19,14 +19,14 @@
       </li>
     </ol>
 
-    <h4 class="feature__subtitle feature__subtitle--material">
-      Material
+    <h4 class="feature__subtitle feature__subtitle--variation">
+      {{data.variationType}}
     </h4>
     <ul class="feature__selectors">
-      <li *ngFor="let material of data.materials">
+      <li *ngFor="let variation of data.variations">
         <button
-          [style.background-image]="'url(' + material + ')'"
-          (click)="setDemoImage(material)"
+          [style.background-image]="'url(' + variation + ')'"
+          (click)="setDemoImage(variation)"
           class="feature__selector"
         ></button>
       </li>
