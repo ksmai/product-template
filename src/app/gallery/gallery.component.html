@@ -1,1 +1,17 @@
-gallery
+<section class="gallery" *ngIf="galleryData | async as data">
+  <a
+    *ngFor="let image of data.images; let i=index"
+    [href]="image.link"
+    target="_blank"
+    class="gallery__wrapper"
+    [class.gallery__wrapper--long]="i === 0 || i === 3"
+  >
+    <figure class="gallery__figure">
+      <img class="gallery__image" [src]="image.url" [alt]="image.title">
+      <figcaption class="gallery__caption caption">
+        <span class="caption__text">{{image.title}}</span>
+        <i class="fa fa-arrow-right caption__icon"></i>
+      </figcaption>
+    </figure>
+  </a>
+</section>

@@ -11,3 +11,7 @@ body {
 *:after {
   box-sizing: border-box;
 }
+
+::selection {
+  background-color: rgba(125, 125, 125, .2);
+}
