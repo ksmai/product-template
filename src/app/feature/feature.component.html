@@ -1,1 +1,35 @@
-feature
+<section class="feature" *ngIf="featureData | async as data">
+  <figure class="feature__demo">
+    <img
+      [src]="demoImage || data.materials[0]"
+      alt="feature demo"
+      class="feature__image"
+    >
+  </figure>
+
+  <section class="feature__description">
+    <h2 class="name">{{data.name}}</h2>
+
+    <h4 class="feature__subtitle">Features</h4>
+    <ol class="feature__list">
+      <li *ngFor="let feature of data.features" class="feature__item">
+        {{feature}}
+      </li>
+    </ol>
+
+    <h4 class="feature__subtitle">Material</h4>
+    <button
+      *ngFor="let material of data.materials"
+      [style.background-image]="'url(' + material + ')'"
+      (click)="setDemoImage(material)"
+      class="feature__selector"
+    ></button>
+
+    <h4 class="feature__subtitle feature__subtitle--small">
+      {{data.text}}
+    </h4>
+    <a [href]="data.link" target="_blank" class="feature__button">
+      {{data.buttonText}}
+    </a>
+  </section>
+</section>
