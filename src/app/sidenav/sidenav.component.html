@@ -13,7 +13,7 @@
     *ngFor="let link of (sidenavData|async).links"
     [href]="link.url"
     target="_blank"
-    class="link"
+    class="link menu__item"
     [class.link--important]="link.important"
   >{{link.text}}</a>
 </nav>

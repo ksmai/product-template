@@ -10,20 +10,27 @@
   <section class="feature__description">
     <h2 class="name">{{data.name}}</h2>
 
-    <h4 class="feature__subtitle">Features</h4>
+    <h4 class="feature__subtitle feature__subtitle--list">
+      Features
+    </h4>
     <ol class="feature__list">
       <li *ngFor="let feature of data.features" class="feature__item">
         {{feature}}
       </li>
     </ol>
 
-    <h4 class="feature__subtitle">Material</h4>
-    <button
-      *ngFor="let material of data.materials"
-      [style.background-image]="'url(' + material + ')'"
-      (click)="setDemoImage(material)"
-      class="feature__selector"
-    ></button>
+    <h4 class="feature__subtitle feature__subtitle--material">
+      Material
+    </h4>
+    <ul class="feature__selectors">
+      <li *ngFor="let material of data.materials">
+        <button
+          [style.background-image]="'url(' + material + ')'"
+          (click)="setDemoImage(material)"
+          class="feature__selector"
+        ></button>
+      </li>
+    </ul>
 
     <h4 class="feature__subtitle feature__subtitle--small">
       {{data.text}}

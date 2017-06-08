@@ -39,7 +39,9 @@
 }
 
 .description {
-  padding: 30px 250px 100px;
+  padding: 30px 20px 100px;
+  margin: auto;
+  max-width: 900px;
 }
 
 .description__lead {
@@ -49,4 +51,32 @@
 
 .description__content {
   column-count: 2;
+}
+
+@media (max-width: 992px) {
+  .video {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media(max-width: 768px) {
+  .video {
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-wrap: wrap;
+  }
+
+  .video__text {
+    padding: 10px;
+    flex-basis: 100%;
+  }
+
+  .video__player-container {
+    flex-basis: 100%;
+  }
+
+  .description__content {
+    column-count: 1;
+  }
 }
