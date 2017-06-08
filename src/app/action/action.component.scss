@@ -1,0 +1,35 @@
+.action {
+  background-color: #ccc;
+  padding: 50px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.action__title {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 2em;
+}
+
+.action__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.action__item {
+  padding: 5px 10px;
+}
+
+@media (max-width: 950px) {
+  .action {
+    align-items: flex-start;
+  }
+
+  .action__list {
+    flex-flow: column nowrap;
+  }
+}

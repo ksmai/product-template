@@ -1,1 +1,12 @@
-action
+<section class="action" *ngIf="actionData | async as data">
+  <h2 class="action__title">{{data.title}}</h2>
+
+  <ul class="action__list">
+    <li class="action__item" *ngFor="let action of data.actions">
+      <a [href]="action.url" target="_blank" class="link">
+        <i class="fa fa-code"></i>
+        <span>{{action.text}}</span>
+      </a>
+    </li>
+  </ul>
+</section>
