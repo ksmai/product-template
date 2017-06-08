@@ -1,9 +1,9 @@
 {
-  "name": "advertisement-template",
+  "name": "product-template",
   "private": true,
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/ksmai/advertisement-template",
+  "repository": "https://github.com/ksmai/product-template",
   "author": "ksmai <kasingmai@gmail.com>",
   "license": "MIT",
   "scripts": {

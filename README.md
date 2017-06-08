@@ -1,16 +1,16 @@
-[![Build Status](https://travis-ci.org/ksmai/advertisement-template.svg?branch=master)](https://travis-ci.org/ksmai/advertisement-template)
+[![Build Status](https://travis-ci.org/ksmai/product-template.svg?branch=master)](https://travis-ci.org/ksmai/product-template)
 
-# advertisement-template
+# product-template
 A clone of [this webpage](http://www.hermanmiller.com/products/seating/performance-work-chairs/aeron-remastered.html#/) by Aeron Remastered. This is part of the **Chingu Frontend Web Development Challenge** posted by [P1xt](https://medium.com/@P1xt/chingu-frontend-web-development-challenge-1-8ce9810fa3c8).
 
 ## Demo
-https://ksmai.github.io/advertisement-template/
+https://ksmai.github.io/product-template/
 
 ## Development
 ```
 # Clone repository
-git clone https://github.com/ksmai/advertisement-template
-cd advertisement-template
+git clone https://github.com/ksmai/product-template
+cd product-template
 
 yarn           # install dependencies
 yarn start     # start dev server

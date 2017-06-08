@@ -5,7 +5,7 @@ import { SidenavData } from '../../models';
 import { DataService } from '../core/data.service';
 
 @Component({
-  selector: 'ads-sidenav',
+  selector: 'pro-sidenav',
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.scss'],
 })

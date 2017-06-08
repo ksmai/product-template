@@ -79,6 +79,7 @@
   color: #fff;
   background-color: #e24d3f;
   transition: background-color .15s cubic-bezier(.4, 0, .2, 1);
+  display: inline-block;
 
   &:hover {
     background-color: darken(#e24d3f, 10%);
@@ -113,6 +114,7 @@
   .feature__list {
     order: 11;
     padding-left: 0;
+    margin-left: 20px;
   }
 
   .feature__subtitle--variation {

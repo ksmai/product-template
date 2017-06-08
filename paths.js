@@ -1,6 +1,6 @@
 const path = require('path');
 
-exports.publicPath = '/advertisement-template/';
+exports.publicPath = '/product-template/';
 exports.src = path.resolve(__dirname, 'src');
 exports.assets = path.resolve(__dirname, 'assets');
 exports.docs = path.resolve(__dirname, 'docs');

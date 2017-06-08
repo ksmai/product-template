@@ -8,10 +8,10 @@ import {
 } from '@angular/core';
 
 @Directive({
-  selector: '[adsScrollImage]',
+  selector: '[proScrollImage]',
 })
 export class ScrollImageDirective implements OnInit {
-  @Input() adsScrollImage: [number, number];
+  @Input() proScrollImage: [number, number];
   @HostBinding('style.transform') transform: string;
   top: number;
   bottom: number;
@@ -41,8 +41,8 @@ export class ScrollImageDirective implements OnInit {
     const minScroll = this.top > window.innerHeight ?
       this.top - window.innerHeight :
       0;
-    const percent = this.adsScrollImage[0] +
-      (this.adsScrollImage[1] - this.adsScrollImage[0]) *
+    const percent = this.proScrollImage[0] +
+      (this.proScrollImage[1] - this.proScrollImage[0]) *
       (window.scrollY - minScroll) / (maxScroll - minScroll);
     this.transform = `translateY(${percent}%)`;
   }

@@ -5,7 +5,7 @@ import { TopnavData } from '../../models';
 import { DataService } from '../core/data.service';
 
 @Component({
-  selector: 'ads-topnav',
+  selector: 'pro-topnav',
   templateUrl: './topnav.component.html',
   styleUrls: ['./topnav.component.scss'],
 })

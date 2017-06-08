@@ -5,7 +5,7 @@ import { GalleryData } from '../../models';
 import { DataService } from '../core/data.service';
 
 @Component({
-  selector: 'ads-gallery',
+  selector: 'pro-gallery',
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.scss'],
 })

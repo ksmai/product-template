@@ -5,7 +5,7 @@ import { DetailData } from '../../models';
 import { DataService } from '../core/data.service';
 
 @Component({
-  selector: 'ads-detail',
+  selector: 'pro-detail',
   templateUrl: './detail.component.html',
   styleUrls: ['./detail.component.scss'],
 })

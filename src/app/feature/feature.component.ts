@@ -5,7 +5,7 @@ import { FeatureData } from '../../models';
 import { DataService } from '../core/data.service';
 
 @Component({
-  selector: 'ads-feature',
+  selector: 'pro-feature',
   templateUrl: './feature.component.html',
   styleUrls: ['./feature.component.scss'],
 })

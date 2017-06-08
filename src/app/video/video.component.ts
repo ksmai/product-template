@@ -5,7 +5,7 @@ import { VideoData } from '../../models';
 import { DataService } from '../core/data.service';
 
 @Component({
-  selector: 'ads-video',
+  selector: 'pro-video',
   templateUrl: './video.component.html',
   styleUrls: ['./video.component.scss'],
 })

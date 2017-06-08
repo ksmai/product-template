@@ -5,7 +5,7 @@ import { IntroData } from '../../models';
 import { DataService } from '../core/data.service';
 
 @Component({
-  selector: 'ads-intro',
+  selector: 'pro-intro',
   templateUrl: './intro.component.html',
   styleUrls: ['./intro.component.scss'],
 })

@@ -5,7 +5,7 @@ import { ActionData } from '../../models';
 import { DataService } from '../core/data.service';
 
 @Component({
-  selector: 'ads-action',
+  selector: 'pro-action',
   templateUrl: './action.component.html',
   styleUrls: ['./action.component.scss'],
 })
